@@ -1,12 +1,20 @@
-/bin/sh: 1: cd: can't cd to /home/user1/Desktop/dev_script/run_all.sh
-/bin/sh: 1: cd: can't cd to /home/user1/Desktop/dev_script/run_all.sh
-Run Started at: Sat Apr 25 04:09:48 PM UTC 2026
 ======================
+Run Started at: Sat Apr 25 04:30:39 PM UTC 2026
+======================
+Running System Monitor...
+               total        used        free      shared  buff/cache   available
+Mem:           3.8Gi       1.6Gi       202Mi        44Mi       2.3Gi       2.2Gi
+Swap:             0B          0B          0B
+sh: 1: Uptime: not found
+====Disk Usage ===
+Total: 24 GB
+Used: 11GB
+Free: 11GB
+
+===Memory Usaga===
+
+=== System Uptime ===
+Updating system...
+bash: update.sh: No such file or directory
 Update Failed
-======================
-Run Completed at:Sat Apr 25 04:09:55 PM UTC 2026
-/bin/sh: 1: cd: can't cd to /home/user1/Desktop/dev_script/run_all.sh
-Running Tasks...
-Run Started at: Sat Apr 25 04:18:42 PM UTC 2026
-======================
-Update Failed
+Pushing to GitHub...

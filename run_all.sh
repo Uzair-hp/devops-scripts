@@ -1,24 +1,26 @@
-#!/bin/bash 
+#!/bin/bash
 
-cd /home/user1/Desktop/dev_script
+cd /home/user1/Desktop/dev_script || exit
 
-LOG_File="/home/user1/Desktop/dev_script/log.txt"
+LOG_FILE="/home/user1/Desktop/dev_script/log.txt"
 
-echo "Running Tasks..." >> "$LOG_File"
-echo "Run Started at: $(date)" >> "$LOG_File"
-echo "======================" >> "$LOG_File"
+echo "======================" >> "$LOG_FILE"
+echo "Run Started at: $(date)" >> "$LOG_FILE"
+echo "======================" >> "$LOG_FILE"
 
-echo "Running System Monitor..."
-python3 monitor.py || echo "Monitor Failed" >> "$LOG_File" 
+echo "Running System Monitor..." >> "$LOG_FILE"
+python3 monitor.py >> "$LOG_FILE" 2>&1 || echo "Monitor Failed" >> "$LOG_FILE"
 
-echo "Updating system..."
-bash update.sh || echo "Update Failed" >> "$LOG_File"
+echo "Updating system..." >> "$LOG_FILE"
+bash update.sh >> "$LOG_FILE" 2>&1 || echo "Update Failed" >> "$LOG_FILE"
 
-echo "Pushing to Github..."
-python3 gitautomation.py || echo "Git Push Failed" >> "$LOG_File"
+echo "Pushing to GitHub..." >> "$LOG_FILE"
+python3 gitautomation.py >> "$LOG_FILE" 2>&1 || echo "Git Push Failed" >> "$LOG_FILE"
 
-echo "All Task Completed"
+echo "All Tasks Completed" >> "$LOG_FILE"
 
-echo "======================" >> "$LOG_File"
-echo "Run Completed at:$(date)">>  "$LOG_File"
-echo "======================="
+echo "Run Completed at: $(date)" >> "$LOG_FILE"
+echo "======================" >> "$LOG_FILE"
+echo "" >> "$LOG_FILE"
+
+
