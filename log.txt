@@ -18,3 +18,58 @@ Updating system...
 bash: update.sh: No such file or directory
 Update Failed
 Pushing to GitHub...
+[main 48dc470] auto commit
+ 2 files changed, 35 insertions(+), 25 deletions(-)
+To github.com:Uzair-hp/devops-scripts.git
+   292a567..48dc470  main -> main
+All Tasks Completed
+Run Completed at: Sat Apr 25 04:30:42 PM UTC 2026
+======================
+
+======================
+Run Started at: Sat Apr 25 04:33:24 PM UTC 2026
+======================
+Running System Monitor...
+               total        used        free      shared  buff/cache   available
+Mem:           3.8Gi       1.7Gi       196Mi        44Mi       2.2Gi       2.1Gi
+Swap:             0B          0B          0B
+sh: 1: Uptime: not found
+====Disk Usage ===
+Total: 24 GB
+Used: 11GB
+Free: 11GB
+
+===Memory Usaga===
+
+=== System Uptime ===
+Updating system...
+Updating System..
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Hit:1 http://security.ubuntu.com/ubuntu noble-security InRelease
+Hit:2 http://in.archive.ubuntu.com/ubuntu noble InRelease
+Hit:3 http://in.archive.ubuntu.com/ubuntu noble-updates InRelease
+Hit:4 http://in.archive.ubuntu.com/ubuntu noble-backports InRelease
+Reading package lists...
+Building dependency tree...
+Reading state information...
+1 package can be upgraded. Run 'apt list --upgradable' to see it.
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Calculating upgrade...
+The following packages were automatically installed and are no longer required:
+  libgl1-amber-dri libglapi-mesa libllvm19 linux-headers-6.14.0-27-generic
+  linux-hwe-6.14-headers-6.14.0-27 linux-hwe-6.14-tools-6.14.0-27
+  linux-image-6.14.0-27-generic linux-modules-6.14.0-27-generic
+  linux-modules-extra-6.14.0-27-generic linux-tools-6.14.0-27-generic
+Use 'sudo apt autoremove' to remove them.
+The following packages have been kept back:
+  libgl1-amber-dri
+0 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
+Update complete!
+Pushing to GitHub...
