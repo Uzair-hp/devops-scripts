@@ -4,7 +4,7 @@ cd /home/user1/Desktop/dev_script
 
 LOG_File="/home/user1/Desktop/dev_script/log.txt"
 
-echo "Running Tasks..." >> "$LOG_Fil"e
+echo "Running Tasks..." >> "$LOG_File"
 echo "Run Started at: $(date)" >> "$LOG_File"
 echo "======================" >> "$LOG_File"
 
