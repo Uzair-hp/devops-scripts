@@ -73,3 +73,36 @@ The following packages have been kept back:
 0 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
 Update complete!
 Pushing to GitHub...
+[main 03cd81c] auto commit
+ 2 files changed, 62 insertions(+)
+ create mode 100755 update.sh
+To github.com:Uzair-hp/devops-scripts.git
+   48dc470..03cd81c  main -> main
+All Tasks Completed
+Run Completed at: Sat Apr 25 04:33:47 PM UTC 2026
+======================
+
+======================
+Run Started at: Sat Apr 25 04:35:01 PM UTC 2026
+======================
+Running System Monitor...
+               total        used        free      shared  buff/cache   available
+Mem:           3.8Gi       1.8Gi       185Mi        44Mi       2.2Gi       2.1Gi
+Swap:             0B          0B          0B
+sh: 1: Uptime: not found
+====Disk Usage ===
+Total: 24 GB
+Used: 11GB
+Free: 11GB
+
+===Memory Usaga===
+
+=== System Uptime ===
+Updating system...
+Updating System..
+sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+Update complete!
+Pushing to GitHub...
