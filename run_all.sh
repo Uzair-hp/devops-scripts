@@ -1,22 +1,24 @@
 #!/bin/bash 
 
-cd /home/user1/Desktop/devops-scripts
+cd /home/user1/Desktop/dev_script
 
-echo "Running Tasks..."
-echo "Run Started at: $(date)"
-echo "======================"
+LOG_File="/home/user1/Desktop/dev_script/log.txt"
+
+echo "Running Tasks..." >> "$LOG_Fil"e
+echo "Run Started at: $(date)" >> "$LOG_File"
+echo "======================" >> "$LOG_File"
 
 echo "Running System Monitor..."
-python3 monitor.py || echo "Monitor Failed"
+python3 monitor.py || echo "Monitor Failed" >> "$LOG_File" 
 
 echo "Updating system..."
-bash update.sh || echo "Update Failed"
+bash update.sh || echo "Update Failed" >> "$LOG_File"
 
 echo "Pushing to Github..."
-python3 gitautomation.py || echo "Git Push Failed"
+python3 gitautomation.py || echo "Git Push Failed" >> "$LOG_File"
 
 echo "All Task Completed"
 
-echo "======================"
-echo "Run Completed at:$(date)"
+echo "======================" >> "$LOG_File"
+echo "Run Completed at:$(date)">>  "$LOG_File"
 echo "======================="
